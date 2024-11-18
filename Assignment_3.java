@@ -1,37 +1,13 @@
-class Num{
-    int n;
-    public Num(int n){
-        this.n=n;
+// Write a Java program to show parameterized constructor.
+public class Assignment2_3 {
+    int a;
+    public
+    Assignment2_3(int x){
+        System.out.println("Parametrized constructor called");
+        a=x;
     }
-    public void showNum(){
-        System.out.println("Number: "+n);
-    }
-}
-class HexNum extends Num{
-    public HexNum(int n){
-        super(n);
-
-    }
-    public  void showNum(){
-        System.out.println("Hexadecimal:"+Integer.toHexString(n).toUpperCase());
-        System.out.println("Octal:"+Integer.toOctalString(n));
-
-    }
-}
-public class Assignment_3 {
     public static void main(String[] args) {
-
-
-                // Create an object of Num
-                Num numObj = new Num(255);
-                System.out.println("Base class output:");
-                numObj.showNum();  // Call the showNum method of the base class
-        
-                // Create an object of HexNum
-                HexNum hexNumObj = new HexNum(255);
-                System.out.println("\nDerived class output:");
-                hexNumObj.showNum();  // Call the overridden showNum method of the derived class
-
-
-}
+        Assignment2_3 obj=new Assignment2_3(3);
+        System.out.println(obj.a);
+    }
 }
