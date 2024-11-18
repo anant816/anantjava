@@ -1,13 +1,18 @@
-
-public class question9 {
-    public static long CalculatFactorial(int n){
-        long result=1;
-        for(int i=1;i<=n;i++){
-            result*=i;
-        }
-        return result;
-    }
+import java.util.Scanner;
+public class question8 {
     public static void main(String[] args) {
-        System.out.println("Factorial of 12 is : "+CalculatFactorial(12));
-    }    
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the no. whose divisibility is to be checked");
+        int a=sc.nextInt();
+        System.out.println("enter the no. through which the above entered number's divisibility will be checked.");
+        int b=sc.nextInt();
+        if(a%b==0){
+            System.out.println("a is divisible by b");
+
+        }
+        else {
+            System.out.println("a is not divisible by b");
+        }
+
+    }
 }
